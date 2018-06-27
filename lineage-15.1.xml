@@ -37,14 +37,14 @@
 
   <remove-project name="LineageOS/android_packages_apps_Updater"/>
 
-  <project path="hardware/qcom/audio-caf/msm8953" name="Galaxy-MSM8953/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" revision="lineage-15.1-caf-8916" />
-  <project path="packages/apps/Updater"           name="Galaxy-MSM8953/android_packages_apps_Updater"                           revision="lineage-15.1" />
+  <project path="hardware/qcom/audio-caf/msm8953" name="Galaxy-MSM8916/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" revision="lineage-15.1-caf-8916" />
+  <project path="packages/apps/Updater"           name="Galaxy-MSM8916/android_packages_apps_Updater"                           revision="lineage-15.1" />
  
   <!-- Qcom Common -->
   <project path="device/qcom/common" name="LineageOS/android_device_qcom_common"/>
 
   <!-- TWRP -->
-  <project path="bootable/recovery-twrp" name="Galaxy-MSM8953/android_bootable_recovery" remote="github" revision="android-8.1"/>
+  <project path="bootable/recovery-twrp" name="Galaxy-MSM8916/android_bootable_recovery" remote="github" revision="android-8.1"/>
 
   <!-- SM-J727(X)/j7poplte(xxx) -->
   <project path="device/samsung/j7poplte-common" name="Galaxy-MSM8953/android_device_samsung_j7poplte-common" groups="device" revision="lineage-15.1"/>
@@ -55,7 +55,7 @@
   <project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common" groups="device"/>
 
  <!-- arm-eabi-7.2 -->
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-7.2" name="Galaxy-MSM8953/android-prebuilts-gcc-linux-x86-arm-arm-eabi-7.2" remote="github" revision="master"/>
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-7.2" name="Galaxy-MSM8916/android-prebuilts-gcc-linux-x86-arm-arm-eabi-7.2" remote="github" revision="master"/>
 
  <!-- Dependencies -->
   <project path="external/busybox" name="omnirom/android_external_busybox" remote="github" revision="android-8.1"/>
@@ -72,5 +72,5 @@
   <project path="vendor/samsung" name="Galaxy-MSM8953/proprietary_vendor_samsung" groups="device" remote="Galaxy-MSM8953"/>
 
  <!-- GappsGo -->
-  <project path="vendor/gapps-go" name="Galaxy-MSM8953/gapps-go" revision="master"/>
+  <project path="vendor/gapps-go" name="Galaxy-MSM8916/gapps-go" revision="master"/>
 </manifest>
