@@ -73,7 +73,7 @@
   <project path="kernel/samsung/msm8953" name="Galaxy-MSM8953/android_kernel_samsung_msm8953" remote="Galaxy-MSM8953"/>
 
  <!-- Substratum Repo -->
- <project path="external/Substratum" name="Galaxy-MSM8916/android_external_substratum" remote="Galaxy-MSM8953" revision="master"/>
+ <project path="external/Substratum" name="Galaxy-MSM8953/android_external_substratum" remote="Galaxy-MSM8953" revision="master"/>
 
  <!-- Vendor Trees For All Device Trees -->
   <project path="vendor/samsung" name="Galaxy-MSM8953/proprietary_vendor_samsung" groups="device" remote="Galaxy-MSM8953"/>
