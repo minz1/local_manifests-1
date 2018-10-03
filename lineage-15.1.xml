@@ -47,8 +47,8 @@
   <project path="bootable/recovery-twrp" name="Galaxy-MSM8953/android_bootable_recovery" remote="github" revision="android-8.1"/>
 
   <!-- SM-J727(X)/j7poplte(xxx) -->
-  <project path="device/samsung/j7poplte-common" name="Galaxy-MSM8953/android_device_samsung_j7poplte-common" groups="device" revision="lineage-15.1"/>
-  <project path="device/samsung/j7popltespr" name="Galaxy-MSM8953/android_device_samsung_j7popltespr" groups="device" revision="lineage-15.1"/>
+  <project path="device/samsung/j7poplte-common" name="Galaxy-MSM8953/android_device_samsung_j7poplte-common" groups="device" remote="Galaxy-MSM8953"/>
+  <project path="device/samsung/j7popltespr" name="Galaxy-MSM8953/android_device_samsung_j7popltespr" groups="device" remote="Galaxy-MSM8953"/>
 
  <!-- Samsung MSM8953 Common Repos -->
  <project path="device/samsung/msm8953-common" name="Galaxy-MSM8953/android_device_samsung_msm8953-common" groups="device" remote="Galaxy-MSM8953"/>

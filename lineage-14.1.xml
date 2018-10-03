@@ -40,21 +40,21 @@
   <project path="device/qcom/common" name="LineageOS/android_device_qcom_common"/>
 
   <!-- SM-C7000/c7ltechn -->
-  <project path="device/samsung/c7lte-common" name="Galaxy-MSM8953/android_device_samsung_c7lte-common" groups="device" revision="cm-14.1"/>
-  <project path="device/samsung/c7ltechn" name="Galaxy-MSM8953/android_device_samsung_c7ltechn" groups="device" revision="cm-14.1"/>
+  <project path="device/samsung/c7lte-common" name="Galaxy-MSM8953/android_device_samsung_c7lte-common" groups="device" remote="Galaxy-MSM8953"/>
+  <project path="device/samsung/c7ltechn" name="Galaxy-MSM8953/android_device_samsung_c7ltechn" groups="device" remote="Galaxy-MSM8953"/>
 
   <!-- SM-C701F/c7proltedd -->
-  <project path="device/samsung/c7prolte-common" name="Galaxy-MSM8953/android_device_samsung_c7prolte-common" groups="device" revision="cm-14.1"/>
-  <project path="device/samsung/c7proltedd" name="Galaxy-MSM8953/android_device_samsung_c7proltedd" groups="device" revision="cm-14.1"/>
+  <project path="device/samsung/c7prolte-common" name="Galaxy-MSM8953/android_device_samsung_c7prolte-common" groups="device" remote="Galaxy-MSM8953"/>
+  <project path="device/samsung/c7proltedd" name="Galaxy-MSM8953/android_device_samsung_c7proltedd" groups="device" remote="Galaxy-MSM8953"/>
 
   <!-- SM-G6100/on7xltechn -->
-  <project path="device/samsung/on7xlte-common" name="Galaxy-MSM8953/android_device_samsung_on7xlte-common" groups="device" revision="cm-14.1"/>
-  <project path="device/samsung/on7xltechn" name="Galaxy-MSM8953/android_device_samsung_on7xltechn" groups="device" revision="cm-14.1"/>
+  <project path="device/samsung/on7xlte-common" name="Galaxy-MSM8953/android_device_samsung_on7xlte-common" groups="device" remote="Galaxy-MSM8953"/>
+  <project path="device/samsung/on7xltechn" name="Galaxy-MSM8953/android_device_samsung_on7xltechn" groups="device" remote="Galaxy-MSM8953"/>
 
   <!-- SM-J727(X)/j7poplte(xxx) -->
-  <project path="device/samsung/j7poplte-common" name="Galaxy-MSM8953/android_device_samsung_j7poplte-common" groups="device" revision="cm-14.1"/>
-  <project path="device/samsung/j7popltespr" name="Galaxy-MSM8953/android_device_samsung_j7popltespr" groups="device" revision="cm-14.1"/>
-  <project path="device/samsung/j7poplteusc" name="Galaxy-MSM8953/android_device_samsung_j7poplteusc" groups="device" revision="cm-14.1"/>
+  <project path="device/samsung/j7poplte-common" name="Galaxy-MSM8953/android_device_samsung_j7poplte-common" groups="device" remote="Galaxy-MSM8953"/>
+  <project path="device/samsung/j7popltespr" name="Galaxy-MSM8953/android_device_samsung_j7popltespr" groups="device" remote="Galaxy-MSM8953"/>
+  <project path="device/samsung/j7poplteusc" name="Galaxy-MSM8953/android_device_samsung_j7poplteusc" groups="device" remote="Galaxy-MSM8953"/>
 
   <!-- Samsung MSM8953 Common Repos -->
   <project path="device/samsung/msm8953-common" name="Galaxy-MSM8953/android_device_samsung_msm8953-common" groups="device" remote="Galaxy-MSM8953"/>
@@ -73,7 +73,7 @@
   <project path="kernel/samsung/msm8953" name="Galaxy-MSM8953/android_kernel_samsung_msm8953" remote="Galaxy-MSM8953"/>
 
  <!-- Substratum Repo -->
- <project path="external/Substratum" name="Galaxy-MSM8953/android_external_substratum" remote="Galaxy-MSM8953" revision="master"/>
+ <project path="external/Substratum" name="Galaxy-MSM8953/android_external_substratum" remote="github" revision="master"/>
 
  <!-- Vendor Trees For All Device Trees -->
   <project path="vendor/samsung" name="Galaxy-MSM8953/proprietary_vendor_samsung" groups="device" remote="Galaxy-MSM8953"/>
