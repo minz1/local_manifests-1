@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="Galaxy-MSM8953"
+           fetch="https://github.com"
+           review="review.msm8953.com"
+           revision="lineage-16.0" />
+
+  <remove-project name="device/generic/mini-emulator-arm64" />
+  <remove-project name="device/generic/mini-emulator-x86" />
+  <remove-project name="device/generic/mini-emulator-x86_64" />
+  <remove-project name="device/generic/qemu" />
+  <remove-project name="device/generic/x86" />
+  <remove-project name="device/generic/x86_64" />
+
+  <remove-project name="platform/prebuilts/android-emulator" />
+
+  <remove-project name="platform/prebuilts/clang/host/darwin-x86"/>
+
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" />
+
+  <remove-project name="platform/prebuilts/gdb/darwin-x86"/>
+  <remove-project name="platform/prebuilts/go/darwin-x86"/>
+  <remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
+  
+  <remove-project name="platform/prebuilts/gradle-plugin" />
+  <remove-project name="platform/prebuilts/libs/libedit" />
+
+  <remove-project name="platform/sdk" />
+
+  <!-- SM-J727P/j7popltespr -->
+  <project path="device/samsung/j7popltespr" name="Galaxy-MSM8953/android_device_samsung_j7popltespr" groups="device" remote="Galaxy-MSM8953"/>
+
+ <!-- Dependencies -->
+  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings"/>
+
+ <!-- Samsung Hardware Repo -->
+  <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" />
+
+ <!-- Common Samsung MSM8953 Kernel -->
+  <project path="kernel/samsung/msm8953" name="Galaxy-MSM8953/android_kernel_samsung_msm8953" remote="Galaxy-MSM8953"/>
+
+ <!-- Vendor Trees For All Device Trees -->
+  <project path="vendor/samsung" name="Galaxy-MSM8953/proprietary_vendor_samsung" groups="device" remote="Galaxy-MSM8953"/>
+</manifest>
