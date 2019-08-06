@@ -7,7 +7,7 @@
            revision="lineage-16.0" />
 
  <!-- SM-J727P/j7popltespr -->
-  <project path="device/samsung/j7popltespr" name="Galaxy-MSM8953/android_device_samsung_j7popltespr" groups="device" remote="Galaxy-MSM8953"/>
+  <project path="device/samsung/j7popltespr" name="minz1/device_samsung_j7popltespr" groups="device" remote="Galaxy-MSM8953"/>
 
  <!-- Dependencies -->
   <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings"/>
@@ -16,8 +16,8 @@
   <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" />
 
  <!-- Common Samsung MSM8953 Kernel -->
-  <project path="kernel/samsung/msm8953" name="Galaxy-MSM8953/android_kernel_samsung_msm8953" remote="Galaxy-MSM8953"/>
+  <project path="kernel/samsung/msm8953" name="minz1/kernel_samsung_msm8953" remote="Galaxy-MSM8953"/>
 
  <!-- Vendor Trees For All Device Trees -->
-  <project path="vendor/samsung" name="Galaxy-MSM8953/proprietary_vendor_samsung" groups="device" remote="Galaxy-MSM8953"/>
+  <project path="vendor/samsung" name="minz1/vendor_samsung" groups="device" remote="Galaxy-MSM8953"/>
 </manifest>
