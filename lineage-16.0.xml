@@ -6,6 +6,11 @@
            review="review.msm8953.com"
            revision="lineage-16.0" />
 
+  <remote  name="crdroid"
+           fetch="https://github.com/"
+           sync-c="true"
+           revision="refs/heads/9.0" />
+
  <!-- SM-J727P/j7popltespr -->
   <project path="device/samsung/j7popltespr" name="minz1/device_samsung_j7popltespr" groups="device" remote="Galaxy-MSM8953"/>
 
@@ -32,4 +37,7 @@
 
  <!-- Vendor blobs for Xiaomi 6150 devices -->
   <project path="vendor/xiaomi" name="minz1/proprietary_vendor_xiaomi" remote="private" revision="lineage-16.0" />
+
+ <!-- Clang for Xiaomi 6150 devices -->
+  <project path="prebuilts/clang/host/linux-x86/clang-5696680" name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-5696680"  remote="crdroid" clone-depth="1" />
 </manifest>
