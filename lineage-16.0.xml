@@ -42,16 +42,16 @@
   <project path="vendor/samsung" name="minz1/vendor_samsung" groups="device" remote="Galaxy-MSM8953"/>
 
  <!-- Redmi K20/ Mi 9T (davinci) -->
-  <project path="device/xiaomi/davinci" name="minz1/android_device_xiaomi_davinci" remote="private" revision="lineage-16.0" />
+  <project path="device/xiaomi/davinci" name="davinci-dev/android_device_xiaomi_davinci" remote="github" revision="lineage-16.0" />
 
  <!-- Common tree for Xiaomi 6150 devices -->
-  <project path="device/xiaomi/sm6150-common" name="minz1/android_device_xiaomi_sm6150-common" remote="private" revision="lineage-16.0" />
+  <project path="device/xiaomi/sm6150-common" name="davinci-dev/android_device_xiaomi_sm6150-common" remote="github" revision="lineage-16.0" />
 
  <!-- Kernel for Redmi K20/ Mi 9T (davinci) -->
   <project path="kernel/xiaomi/davinci" name="davinci-dev/android_kernel_xiaomi_davinci" remote="github" revision="lineage-16.0" />
 
  <!-- Vendor blobs for Xiaomi 6150 devices -->
-  <project path="vendor/xiaomi" name="minz1/proprietary_vendor_xiaomi" remote="private" revision="lineage-16.0" />
+  <project path="vendor/xiaomi" name="davinci-dev/vendor_xiaomi" remote="github" revision="lineage-16.0" />
 
  <!-- Clang for Xiaomi 6150 devices -->
   <project path="prebuilts/clang/host/linux-x86/clang-5696680" name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-5696680"  remote="crdroid" clone-depth="1" />
