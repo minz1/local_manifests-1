@@ -74,4 +74,12 @@
    
  <!-- Updated 8150 display HAL -->
     <project path="hardware/qcom/display-caf/sm8150" name="davinci-dev/android_hardware_qcom_display" remote="private" revision="lineage-16.0-caf-8150" />
+	
+ <!-- Projects for Kiwi -->
+    <project path="device/huawei/kiwi" name="minz1/android_device_huawei_kiwi" remote="private" revision="lineage-16.0"/>
+	<project path="kernel/huawei/kiwi" name="LineageOS/android_kernel_huawei_kiwi"/>
+    <project path="packages/apps/FlipFlap" name="LineageOS/android_packages_apps_FlipFlap"/>
+	
+ <!-- ODIN -->
+    <project path="packages/apps/ODIN" name="minz1/android_packages_apps_ODIN" remote="private" revision="lineage-16.0"/>
 </manifest>
