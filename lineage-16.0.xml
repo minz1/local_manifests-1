@@ -75,11 +75,21 @@
  <!-- Updated 8150 display HAL -->
     <project path="hardware/qcom/display-caf/sm8150" name="davinci-dev/android_hardware_qcom_display" remote="private" revision="lineage-16.0-caf-8150" />
 	
- <!-- Projects for Kiwi -->
-    <project path="device/huawei/kiwi" name="minz1/android_device_huawei_kiwi" remote="private" revision="lineage-16.0"/>
-	<project path="kernel/huawei/kiwi" name="LineageOS/android_kernel_huawei_kiwi"/>
-    <project path="packages/apps/FlipFlap" name="LineageOS/android_packages_apps_FlipFlap"/>
-	<project path="vendor/huawei" name="TheMuppets/proprietary_vendor_huawei"/>
+ <!-- osprey stuff -->
+	<project path="device/motorola/osprey" name="minz1/device_motorola_osprey" revision="lineage-16.0" remote="private"/>
+	<project path="device/motorola/lux" name="MOTO-M8916/device_motorola_lux" revision="lineage-16.0" remote="github"/>
+	<project path="device/motorola/merlin" name="MOTO-M8916/device_motorola_merlin" revision="lineage-16.0" remote="github"/>
+
+ <!-- msm8916 stuff -->
+	<project path="device/motorola/msm8916-common" name="MOTO-M8916/device_motorola_msm8916-common" revision="lineage-16.0" remote="github"/>
+	<project path="kernel/motorola/msm8916" name="MOTO-M8916/kernel_motorola_msm8916" revision="lineage-15.1" remote="github"/>
+	<project path="vendor/motorola" name="MOTO-M8916/vendor_motorola" revision="9.0" remote="github"/>
+
+	<project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="github" revision="lineage-16.0" />
+	<project name="LineageOS/android_system_qcom" path="system/qcom" groups="qcom" remote="github" revision="lineage-16.0" />
+
+<!-- ARM Developer GCC 8.3 kernel toolchain -->
+<project name="chil360/prebuilts_gcc_linux-x86_arm_arm-eabi-8.3" path="prebuilts/gcc/linux-x86/arm/arm-eabi-8.3" remote="github" revision="master" />
 	
  <!-- ODIN -->
     <project path="packages/apps/ODIN" name="minz1/android_packages_apps_ODIN" remote="private" revision="lineage-16.0"/>
