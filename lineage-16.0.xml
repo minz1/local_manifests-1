@@ -75,15 +75,10 @@
  <!-- Updated 8150 display HAL -->
     <project path="hardware/qcom/display-caf/sm8150" name="davinci-dev/android_hardware_qcom_display" remote="private" revision="lineage-16.0-caf-8150" />
 	
- <!-- osprey stuff -->
-	<project path="device/motorola/osprey" name="minz1/device_motorola_osprey" revision="lineage-16.0" remote="private"/>
-	<project path="device/motorola/lux" name="MOTO-M8916/device_motorola_lux" revision="lineage-16.0" remote="github"/>
-	<project path="device/motorola/merlin" name="MOTO-M8916/device_motorola_merlin" revision="lineage-16.0" remote="github"/>
-
- <!-- msm8916 stuff -->
-	<project path="device/motorola/msm8916-common" name="MOTO-M8916/device_motorola_msm8916-common" revision="lineage-16.0" remote="github"/>
-	<project path="kernel/motorola/msm8916" name="MOTO-M8916/kernel_motorola_msm8916" revision="lineage-15.1" remote="github"/>
-	<project path="vendor/motorola" name="MOTO-M8916/vendor_motorola" revision="9.0" remote="github"/>
+ <!-- s2 stuff -->
+	<project path="device/leeco/s2" name="minz1/android_device_leeco_s2" revision="lineage-16.0" remote="private"/>
+	<project path="kernel/leeco/msm8976" name="LeEcoDevs/android_kernel_leeco_msm8976" revision="lineage-16.0" remote="github"/>
+	<project path="vendor/leeco" name="LeEcoDevs/proprietary_vendor_leeco" revision="lineage-16.0" remote="github"/>
 	
  <!-- ODIN -->
     <project path="packages/apps/ODIN" name="minz1/android_packages_apps_ODIN" remote="private" revision="lineage-16.0"/>
