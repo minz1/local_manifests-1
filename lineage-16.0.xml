@@ -39,6 +39,10 @@
   <project remote="caf" name="platform/vendor/nxp/opensource/hidlimpl" path="vendor/nxp/opensource/hidlimpl" revision="8541096753e210fd8e44102136d1b75daeccfafd" />
   <project remote="caf" name="platform/vendor/nxp/opensource/packages/apps/Nfc" path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" revision="c61c6e34ecca13e27e3e0d4441c14e7ea78e5b14" />
 
+ <!-- Hacked FWB -->
+  <remove-project name="LineageOS/android_frameworks_base" />
+  <project path="frameworks/base" name="minz1/android_frameworks_base" remote="github" revision="lineage-16.0" />
+
  <!-- SM-J727P/j7popltespr -->
   <project path="device/samsung/j7popltespr" name="minz1/device_samsung_j7popltespr" groups="device" remote="Galaxy-MSM8953"/>
 
