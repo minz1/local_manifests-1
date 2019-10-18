@@ -86,8 +86,8 @@
 	
  <!-- angler stuff -->
     <project path="device/huawei/angler" name="minz1/android_device_huawei_angler" revision="lineage-16.0" remote="github" />
-	<project path="kernel/huawei/angler" name="LineageOS/android_kernel_huawei_angler" revision="lineage-16.0" remote="github" />
-	<project path="vendor/huawei" name="TheMuppets/proprietary_vendor_huawei" revision="lineage-16.0" remote="github" />
+	<project path="kernel/huawei/angler" name="StatiXOS/android_kernel_huawei_angler" revision="9" remote="github" />
+	<project path="vendor/huawei" name="StatiXOS/android_vendor_huawei" revision="9" remote="github" />
 	
  <!-- ODIN -->
     <project path="packages/apps/ODIN" name="minz1/android_packages_apps_ODIN" remote="private" revision="lineage-16.0"/>
