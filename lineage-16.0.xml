@@ -1,94 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+    <remote name="Galaxy-MSM8953" fetch="https://github.com" review="review.msm8953.com" revision="lineage-16.0" />
+    <remote name="crdroid" fetch="https://github.com/" sync-c="true" revision="refs/heads/9.0" />
+    <remove-project name="LineageOS/android_vendor_nxp_interfaces_opensource_nfc" />
+    <remove-project name="LineageOS/android_vendor_nxp_opensource_external_libnfc-nci" />
+    <remove-project name="LineageOS/android_vendor_nxp_opensource_frameworks" />
+    <remove-project name="LineageOS/android_vendor_nxp_opensource_packages_apps_Nfc" />
+    <remove-project name="LineageOS/android_vendor_nxp_opensource_halimpl" />
+    <remove-project name="LineageOS/android_vendor_nxp_opensource_hidlimpl" />
+    <remove-project name="LineageOS/android_vendor_qcom_opensource_interfaces" />
+    <remove-project name="LineageOS/android_hardware_qcom_display" />
+    <project path="hardware/qcom/display" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" />
+    <project path="hardware/qcom/display-caf/apq8084" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-16.0-caf-8084" />
+    <project path="hardware/qcom/display-caf/msm8916" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-16.0-caf-8916" />
+    <project path="hardware/qcom/display-caf/msm8952" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-16.0-caf-8952" />
+    <project path="hardware/qcom/display-caf/msm8960" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-16.0-caf-8960" />
+    <project path="hardware/qcom/display-caf/msm8974" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-16.0-caf-8974" />
+    <project path="hardware/qcom/display-caf/msm8994" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-16.0-caf-8994" />
+    <project path="hardware/qcom/display-caf/msm8996" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-16.0-caf-8996" />
+    <project path="hardware/qcom/display-caf/msm8998" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-16.0-caf-8998" />
+    <project path="hardware/qcom/display-caf/sdm845" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-16.0-caf-845" />
+    <remote fetch="https://source.codeaurora.org/quic/la/" name="caf" review="codeaurora.org" />
+    <project remote="caf" name="platform/vendor/nxp/interfaces/opensource/nfc" path="vendor/nxp/opensource/interfaces/nfc" revision="be4da3327535956bc14153446168fba4d3a28765" />
+    <project remote="caf" name="platform/vendor/nxp/opensource/external/libnfc-nci" path="vendor/nxp/opensource/commonsys/external/libnfc-nci" revision="ac2d3b3f1f44b3bc2c6123568b2ab0aa7f4cf268" />
+    <project remote="caf" name="platform/vendor/nxp/opensource/frameworks" path="vendor/nxp/opensource/commonsys/frameworks" revision="4e3bec42fcdba0d15927327b025f3db283a99a59" />
+    <project remote="caf" name="platform/vendor/nxp/opensource/halimpl" path="vendor/nxp/opensource/halimpl" revision="261aeb629795810c94e78371433724c5e430d927" />
+    <project remote="caf" name="platform/vendor/nxp/opensource/hidlimpl" path="vendor/nxp/opensource/hidlimpl" revision="8541096753e210fd8e44102136d1b75daeccfafd" />
+    <project remote="caf" name="platform/vendor/nxp/opensource/packages/apps/Nfc" path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" revision="c61c6e34ecca13e27e3e0d4441c14e7ea78e5b14" />
 
-  <remote  name="Galaxy-MSM8953"
-           fetch="https://github.com"
-           review="review.msm8953.com"
-           revision="lineage-16.0" />
+    <!-- Hacked FWB -->
+    <remove-project name="LineageOS/android_frameworks_base" />
+    <project path="frameworks/base" name="minz1/android_frameworks_base" remote="github" revision="lineage-16.0" />
 
-  <remote  name="crdroid"
-           fetch="https://github.com/"
-           sync-c="true"
-           revision="refs/heads/9.0" />
+    <!-- SM-J727P/j7popltespr -->
+    <project path="device/samsung/j7popltespr" name="minz1/device_samsung_j7popltespr" groups="device" remote="Galaxy-MSM8953" />
 
-  <remove-project name="LineageOS/android_vendor_nxp_interfaces_opensource_nfc" />
-  <remove-project name="LineageOS/android_vendor_nxp_opensource_external_libnfc-nci" />
-  <remove-project name="LineageOS/android_vendor_nxp_opensource_frameworks" />
-  <remove-project name="LineageOS/android_vendor_nxp_opensource_packages_apps_Nfc" />
-  <remove-project name="LineageOS/android_vendor_nxp_opensource_halimpl" />
-  <remove-project name="LineageOS/android_vendor_nxp_opensource_hidlimpl" />
-  <remove-project name="LineageOS/android_vendor_qcom_opensource_interfaces" />
-  <remove-project name="LineageOS/android_hardware_qcom_display" />
+    <!-- Dependencies -->
+    <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" />
 
-  <project path="hardware/qcom/display" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" />
-  <project path="hardware/qcom/display-caf/apq8084" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-16.0-caf-8084" />
-  <project path="hardware/qcom/display-caf/msm8916" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-16.0-caf-8916" />
-  <project path="hardware/qcom/display-caf/msm8952" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-16.0-caf-8952" />
-  <project path="hardware/qcom/display-caf/msm8960" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-16.0-caf-8960" />
-  <project path="hardware/qcom/display-caf/msm8974" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-16.0-caf-8974" />
-  <project path="hardware/qcom/display-caf/msm8994" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-16.0-caf-8994" />
-  <project path="hardware/qcom/display-caf/msm8996" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-16.0-caf-8996" />
-  <project path="hardware/qcom/display-caf/msm8998" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-16.0-caf-8998" />
-  <project path="hardware/qcom/display-caf/sdm845" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-16.0-caf-845" />
+    <!-- Samsung Hardware Repo -->
+    <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" />
 
-  <remote fetch="https://source.codeaurora.org/quic/la/" name="caf" review="codeaurora.org"/>
-  <project remote="caf" name="platform/vendor/nxp/interfaces/opensource/nfc" path="vendor/nxp/opensource/interfaces/nfc" revision="be4da3327535956bc14153446168fba4d3a28765" />
-  <project remote="caf" name="platform/vendor/nxp/opensource/external/libnfc-nci" path="vendor/nxp/opensource/commonsys/external/libnfc-nci" revision="ac2d3b3f1f44b3bc2c6123568b2ab0aa7f4cf268" />
-  <project remote="caf" name="platform/vendor/nxp/opensource/frameworks" path="vendor/nxp/opensource/commonsys/frameworks" revision="4e3bec42fcdba0d15927327b025f3db283a99a59" />
-  <project remote="caf" name="platform/vendor/nxp/opensource/halimpl" path="vendor/nxp/opensource/halimpl" revision="261aeb629795810c94e78371433724c5e430d927" />
-  <project remote="caf" name="platform/vendor/nxp/opensource/hidlimpl" path="vendor/nxp/opensource/hidlimpl" revision="8541096753e210fd8e44102136d1b75daeccfafd" />
-  <project remote="caf" name="platform/vendor/nxp/opensource/packages/apps/Nfc" path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" revision="c61c6e34ecca13e27e3e0d4441c14e7ea78e5b14" />
+    <!-- Common Samsung MSM8953 Kernel -->
+    <project path="kernel/samsung/msm8953" name="minz1/kernel_samsung_msm8953" remote="Galaxy-MSM8953" />
 
- <!-- Hacked FWB -->
-  <remove-project name="LineageOS/android_frameworks_base" />
-  <project path="frameworks/base" name="minz1/android_frameworks_base" remote="github" revision="lineage-16.0" />
+    <!-- Vendor Trees For All Device Trees -->
+    <project path="vendor/samsung" name="minz1/vendor_samsung" groups="device" remote="Galaxy-MSM8953" />
 
- <!-- SM-J727P/j7popltespr -->
-  <project path="device/samsung/j7popltespr" name="minz1/device_samsung_j7popltespr" groups="device" remote="Galaxy-MSM8953"/>
+    <!-- Redmi K20/ Mi 9T (davinci) -->
+    <project path="device/xiaomi/davinci" name="davinci-dev/android_device_xiaomi_davinci" remote="github" revision="lineage-16.0" />
 
- <!-- Dependencies -->
-  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings"/>
+    <!-- Common tree for Xiaomi 6150 devices -->
+    <project path="device/xiaomi/sm6150-common" name="davinci-dev/android_device_xiaomi_sm6150-common" remote="github" revision="lineage-16.0" />
 
- <!-- Samsung Hardware Repo -->
-  <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" />
+    <!-- Kernel for Redmi K20/ Mi 9T (davinci) -->
+    <project path="kernel/xiaomi/davinci" name="davinci-dev/android_kernel_xiaomi_davinci" remote="github" revision="lineage-16.0" />
 
- <!-- Common Samsung MSM8953 Kernel -->
-  <project path="kernel/samsung/msm8953" name="minz1/kernel_samsung_msm8953" remote="Galaxy-MSM8953"/>
+    <!-- Vendor blobs for Xiaomi 6150 devices -->
+    <project path="vendor/xiaomi" name="davinci-dev/vendor_xiaomi" remote="github" revision="lineage-16.0" />
 
- <!-- Vendor Trees For All Device Trees -->
-  <project path="vendor/samsung" name="minz1/vendor_samsung" groups="device" remote="Galaxy-MSM8953"/>
+    <!-- Clang for Xiaomi 6150 devices -->
+    <project path="prebuilts/clang/host/linux-x86/clang-5696680" name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-5696680" remote="crdroid" clone-depth="1" />
 
- <!-- Redmi K20/ Mi 9T (davinci) -->
-  <project path="device/xiaomi/davinci" name="davinci-dev/android_device_xiaomi_davinci" remote="github" revision="lineage-16.0" />
+    <!-- Updated interfaces repo -->
+    <project path="vendor/qcom/opensource/interfaces" name="davinci-dev/android_vendor_qcom_opensource_interfaces" remote="private" revision="lineage-16.0" />
 
- <!-- Common tree for Xiaomi 6150 devices -->
-  <project path="device/xiaomi/sm6150-common" name="davinci-dev/android_device_xiaomi_sm6150-common" remote="github" revision="lineage-16.0" />
-
- <!-- Kernel for Redmi K20/ Mi 9T (davinci) -->
-  <project path="kernel/xiaomi/davinci" name="davinci-dev/android_kernel_xiaomi_davinci" remote="github" revision="lineage-16.0" />
-
- <!-- Vendor blobs for Xiaomi 6150 devices -->
-  <project path="vendor/xiaomi" name="davinci-dev/vendor_xiaomi" remote="github" revision="lineage-16.0" />
-
- <!-- Clang for Xiaomi 6150 devices -->
-  <project path="prebuilts/clang/host/linux-x86/clang-5696680" name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-5696680"  remote="crdroid" clone-depth="1" />
-
- <!-- Updated interfaces repo -->
-   <project path="vendor/qcom/opensource/interfaces" name="davinci-dev/android_vendor_qcom_opensource_interfaces" remote="private" revision="lineage-16.0" />
-   
- <!-- Updated 8150 display HAL -->
+    <!-- Updated 8150 display HAL -->
     <project path="hardware/qcom/display-caf/sm8150" name="davinci-dev/android_hardware_qcom_display" remote="private" revision="lineage-16.0-caf-8150" />
-	
- <!-- s2 stuff -->
-	<project path="device/leeco/s2" name="minz1/android_device_leeco_s2" revision="lineage-16.0" remote="private"/>
-	<project path="kernel/leeco/msm8976" name="LeEcoDevs/android_kernel_leeco_msm8976" revision="lineage-16.0" remote="github"/>
-	<project path="vendor/leeco" name="LeEcoDevs/proprietary_vendor_leeco" revision="lineage-16.0" remote="github"/>
-	
- <!-- angler stuff -->
-    <project path="device/huawei/angler" name="minz1/android_device_huawei_angler" revision="lineage-16.0" remote="github" />
-	<project path="kernel/huawei/angler" name="StatiXOS/android_kernel_huawei_angler" revision="9" remote="github" />
-	<project path="vendor/huawei" name="StatiXOS/android_vendor_huawei" revision="9" remote="github" />
-	
- <!-- ODIN -->
-    <project path="packages/apps/ODIN" name="minz1/android_packages_apps_ODIN" remote="private" revision="lineage-16.0"/>
+
+    <!-- s2 stuff -->
+    <project path="device/leeco/s2" name="minz1/android_device_leeco_s2" revision="lineage-16.0" remote="private" />
+    <project path="kernel/leeco/msm8976" name="LeEcoDevs/android_kernel_leeco_msm8976" revision="lineage-16.0" remote="github" />
+    <project path="vendor/leeco" name="LeEcoDevs/proprietary_vendor_leeco" revision="lineage-16.0" remote="github" />
+
+    <!-- osprey stuff -->
+    <project name="minz1/android_device_motorola_osprey" path="device/motorola/osprey" remote="github" revision="lineage-16.0" />
+    <project name="chil360/android_device_motorola_msm8916-common" path="device/motorola/msm8916-common" remote="github" revision="lineage-16.0" />
+    <project name="chil360/android_kernel_motorola_msm8916" path="kernel/motorola/msm8916" remote="github" revision="9.0" />
+    <project name="chil360/proprietary_vendor_motorola" path="vendor/motorola" remote="github" revision="9.0" />
+    <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="github" revision="lineage-16.0" />
+    <project name="LineageOS/android_system_qcom" path="system/qcom" groups="qcom" remote="github" revision="lineage-16.0" />
+
+    <!-- ARM Developer GCC 8.3 kernel toolchain -->
+    <project name="chil360/prebuilts_gcc_linux-x86_arm_arm-eabi-8.3" path="prebuilts/gcc/linux-x86/arm/arm-eabi-8.3" remote="github" revision="master" />
+
+    <!-- ODIN -->
+    <project path="packages/apps/ODIN" name="minz1/android_packages_apps_ODIN" remote="private" revision="lineage-16.0" />
 </manifest>
