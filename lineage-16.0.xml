@@ -69,7 +69,7 @@
     <project path="hardware/qcom/display-caf/sm8150" name="davinci-dev/android_hardware_qcom_display" remote="private" revision="lineage-16.0-caf-8150" />
 
     <!-- s2 stuff -->
-    <project path="device/leeco/s2" name="minz1/android_device_leeco_s2" revision="lineage-16.0" remote="private" />
+    <project path="device/leeco/s2" name="minz1/android_device_leeco_s2" revision="lineage-16.0" remote="github" />
     <project path="kernel/leeco/msm8976" name="LeEcoDevs/android_kernel_leeco_msm8976" revision="lineage-16.0" remote="github" />
     <project path="vendor/leeco" name="LeEcoDevs/proprietary_vendor_leeco" revision="lineage-16.0" remote="github" />
 
