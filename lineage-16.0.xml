@@ -2,6 +2,7 @@
 <manifest>
     <remote name="Galaxy-MSM8953" fetch="https://github.com" review="review.msm8953.com" revision="lineage-16.0" />
     <remote name="crdroid" fetch="https://github.com/" sync-c="true" revision="refs/heads/9.0" />
+
     <remove-project name="LineageOS/android_vendor_nxp_interfaces_opensource_nfc" />
     <remove-project name="LineageOS/android_vendor_nxp_opensource_external_libnfc-nci" />
     <remove-project name="LineageOS/android_vendor_nxp_opensource_frameworks" />
@@ -10,6 +11,7 @@
     <remove-project name="LineageOS/android_vendor_nxp_opensource_hidlimpl" />
     <remove-project name="LineageOS/android_vendor_qcom_opensource_interfaces" />
     <remove-project name="LineageOS/android_hardware_qcom_display" />
+
     <project path="hardware/qcom/display" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" />
     <project path="hardware/qcom/display-caf/apq8084" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-16.0-caf-8084" />
     <project path="hardware/qcom/display-caf/msm8916" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-16.0-caf-8916" />
@@ -20,6 +22,7 @@
     <project path="hardware/qcom/display-caf/msm8996" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-16.0-caf-8996" />
     <project path="hardware/qcom/display-caf/msm8998" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-16.0-caf-8998" />
     <project path="hardware/qcom/display-caf/sdm845" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-16.0-caf-845" />
+
     <remote fetch="https://source.codeaurora.org/quic/la/" name="caf" review="codeaurora.org" />
     <project remote="caf" name="platform/vendor/nxp/interfaces/opensource/nfc" path="vendor/nxp/opensource/interfaces/nfc" revision="be4da3327535956bc14153446168fba4d3a28765" />
     <project remote="caf" name="platform/vendor/nxp/opensource/external/libnfc-nci" path="vendor/nxp/opensource/commonsys/external/libnfc-nci" revision="ac2d3b3f1f44b3bc2c6123568b2ab0aa7f4cf268" />
@@ -72,6 +75,11 @@
     <project path="device/leeco/s2" name="minz1/android_device_leeco_s2" revision="lineage-16.0" remote="github" />
     <project path="kernel/leeco/msm8976" name="LeEcoDevs/android_kernel_leeco_msm8976" revision="lineage-16.0" remote="github" />
     <project path="vendor/leeco" name="LeEcoDevs/proprietary_vendor_leeco" revision="lineage-16.0" remote="github" />
+
+    <!-- angler stuff -->
+    <project path="device/huawei/angler" name="minz1/android_device_huawei_angler" revision="lineage-16.0" remote="github" />
+    <project path="kernel/huawei/angler" name="StatiXOS/android_kernel_huawei_angler" revision="9" remote="github" />
+    <project path="vendor/huawei" name="StatiXOS/android_vendor_huawei" revision="9" remote="github" />
 
     <!-- osprey stuff -->
     <project name="minz1/android_device_motorola_osprey" path="device/motorola/osprey" remote="github" revision="lineage-16.0" />
