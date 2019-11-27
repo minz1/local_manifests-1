@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="Galaxy-MSM8953" fetch="https://github.com" review="review.msm8953.com" revision="lineage-16.0" />
+
+    <!-- SM-J727P/j7popltespr -->
+    <project path="device/samsung/j7popltespr" name="minz1/device_samsung_j7popltespr" groups="device" remote="Galaxy-MSM8953" />
+
+    <!-- Samsung Hardware Repo -->
+    <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" />
+
+    <!-- Common Samsung MSM8953 Kernel -->
+    <project path="kernel/samsung/msm8953" name="minz1/kernel_samsung_msm8953" remote="Galaxy-MSM8953" />
+
+    <!-- Samsung Vendor Tree-->
+    <project path="vendor/samsung" name="minz1/vendor_samsung" groups="device" remote="Galaxy-MSM8953" />
+</manifest>
