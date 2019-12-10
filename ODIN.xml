@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- ODIN -->
+    <project path="packages/apps/ODIN" name="minz1/android_packages_apps_ODIN" remote="private" revision="lineage-16.0" />
+</manifest>

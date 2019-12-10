@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- s2 stuff -->
+    <project path="device/leeco/s2" name="minz1/android_device_leeco_s2" revision="lineage-16.0" remote="github" />
+    <project path="kernel/leeco/msm8976" name="LeEcoDevs/android_kernel_leeco_msm8976" revision="lineage-16.0" remote="github" />
+    <project path="vendor/leeco" name="LeEcoDevs/proprietary_vendor_leeco" revision="lineage-16.0" remote="github" />
+</manifest>
