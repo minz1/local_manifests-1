@@ -8,4 +8,7 @@
 
     <!-- ODIN -->
     <project path="packages/apps/ODIN" name="minz1/android_packages_apps_ODIN" remote="github" revision="lineage-16.0" />
+    <!-- Hacked FWB -->
+    <remove-project name="LineageOS/android_frameworks_base" />
+    <project path="frameworks/base" name="minz1/android_frameworks_base" remote="github" revision="lineage-16.0" />
 </manifest>
